@@ -14,9 +14,11 @@ void Qsort_body(int left, int right) {
 			j--;
 		while (Qsort[i] <= std && i < j)
 			i++;
-		temp = Qsort[i];
-		Qsort[i] = Qsort[j];
-		Qsort[j] = temp;
+		if (i<j){
+			temp = Qsort[i];
+			Qsort[i] = Qsort[j];
+			Qsort[j] = temp;
+		}
 	}
 
 	Qsort[left] = Qsort[i];
