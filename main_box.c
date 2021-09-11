@@ -6,7 +6,7 @@ int main(void) {
 	int a = 0;
 	printf("welcome to algorithms box\n");
 	printf("this box will introduce some good algorithms to u!\n");
-	printf("1.Õ∞≈≈–ÚBucket sort\n2.√∞≈›≈≈–ÚBubble sort");
+	printf("1.Õ∞≈≈–ÚBucket sort\n2.√∞≈›≈≈–ÚBubble sort\n3,øÏÀŸ≈≈–ÚQuick sort\n");
 	printf("press the number u want\n");
 	scanf("%d", &a);
 	
@@ -15,6 +15,7 @@ int main(void) {
 	{
 	case 1:  bucket_sort();
 	case 2:  bubble_main();
+	case 3:  Qsort_main();
 
 	default:
 		break;
